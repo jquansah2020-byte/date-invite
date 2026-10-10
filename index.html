@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Question 🌸</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Screen 1: Main Question (Visible by default) -->
+    <div id="screen1" class="card">
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp1eDh6ZjB5N3E2yW5kbm5ndHV6eXZx/cute-dog.gif" alt="Cute Pet">
+      <h1>Will you go on a date with me? 🌸</h1>
+      <div class="btn-group">
+        <button id="yesBtn" onclick="nextScreen('screen2')">YES 💕</button>
+        <button id="noBtn">NO 🌸</button>
+      </div>
+    </div>
+
+    <!-- Screen 2: Date & Time Picker -->
+    <div id="screen2" class="card hidden">
+      <h2>So... when are you free? 🗓️</h2>
+      <label for="datePicker">Pick a Day:</label>
+      <input type="date" id="datePicker">
+      <label for="timePicker">What Time?</label>
+      <select id="timePicker">
+        <option>5:00 PM</option>
+        <option>6:00 PM</option>
+        <option>7:00 PM</option>
+      </select>
+      <button onclick="nextScreen('screen3')">Set the date! 💕</button>
+    </div>
+
+    <!-- Screen 3: Food Options -->
+    <div id="screen3" class="card hidden">
+      <h2>What are we feeling? 🍱</h2>
+      <div class="food-grid">
+        <button class="food-option">🍗 KFC</button>
+        <button class="food-option">🥤 Drink</button>
+        <button class="food-option">🍲 Banku</button>
+      </div>
+      <button onclick="nextScreen('screen4')">Continue 💕</button>
+    </div>
+
+    <!-- Screen 4: Confirmation Letter -->
+    <div id="screen4" class="card hidden">
+      <h2>Glad you didn't say no! 🚗</h2>
+      <p>Be ready on time! I'll come pick you up.</p>
+      <button onclick="nextScreen('screen5')">OK, I Accept 💕</button>
+    </div>
+
+    <!-- Screen 5: Joke Paywall -->
+    <div id="screen5" class="card hidden">
+      <h2>One Small Fee 💸</h2>
+      <p>To confirm your acceptance, please complete the transaction.</p>
+      <div class="fee-box">
+        <h3>Date Agreement™</h3>
+        <p class="price">$499</p>
+      </div>
+      <button onclick="alert('Date Confirmed! See you soon! ❤️')">Pay $499 & Confirm 💕</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

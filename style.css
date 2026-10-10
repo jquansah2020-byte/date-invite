@@ -1,0 +1,135 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fce4ec;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 380px;
+  width: 100%;
+  display: block;
+}
+
+.card.hidden {
+  display: none !important;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+h1, h2 {
+  color: #d81b60;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #555555;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  position: relative;
+  min-height: 50px;
+}
+
+button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  background-color: #d81b60;
+  transform: scale(1.05);
+}
+
+#noBtn {
+  background-color: #9c27b0;
+  position: absolute;
+}
+
+.food-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.food-option {
+  background: #f8bbd0;
+  color: #880e4f;
+  width: 100%;
+}
+
+.food-option:hover {
+  background: #f48fb1;
+}
+
+.fee-box {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e91e63;
+  margin: 5px 0;
+}
